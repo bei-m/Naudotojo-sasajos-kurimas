@@ -1,0 +1,339 @@
+
+body {
+    background-color:#919296;
+    margin: 0;
+    padding: 0;
+    overflow-x:hidden;
+}
+
+@font-face{
+    font-family: 'Futura Display';
+    src: url(Futura\ Display.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Anton';
+    src: url(Anton-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Teko';
+    src: url(Teko-VariableFont_wght.ttf) format('truetype');
+}
+
+header {
+    background-color: #919296;
+    padding: 0.7vh 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.b1 {                       /*headerio buttons*/
+    background-color:#919296;
+    color:  #24272d;
+    border: none;
+    border-radius: 10%;
+    font-weight: bold;
+    font-size: 100%;
+    margin-left: 1%;
+    margin-right: 1%;
+    cursor: pointer;
+    margin-bottom: 0.5%;
+    font-family: 'Futura Display', cursive;
+}
+
+.b1:hover {
+    background-color: #808184;
+}
+
+.img1 {                 /*album out*/
+    width: 100vw;
+    height: auto;
+    z-index: 1;
+    position: relative;
+    padding-top: 13vh;
+    box-sizing: border-box;
+}
+
+.img2 {                 /*pavadinimas png*/
+    padding-top:3%;
+    padding-bottom:2%;
+    width: 37vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pav {
+    color: #f3dc7b;
+    background-color: #919296;
+    font-size: 6vh;
+    margin-top: 0;
+    padding: 0%;
+    font-family: 'Futura Display';
+    border: none;
+    border-radius: 10%;
+}
+
+.text1{                         /*STORE, LIVE, VIDEOS main*/
+    color:#24272d;
+    font-size: 6.5vw;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Futura Display', cursive;
+}
+
+.merch {                        
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 96vw;
+}
+
+.merch_inf{
+    text-align: center;
+}
+
+.lyg {
+    text-align: center;
+}
+
+.merch img {
+    display: inline-block;
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.merch button {
+    position: center;
+    background-color:#919296;
+    color: #383d47;;
+    border: none;
+    font-weight: bold;
+    font-size: 2vh;
+    cursor: pointer;
+    margin-bottom: 0.5%;
+    font-family: 'Futura Display', cursive;
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.merch .merch_inf:nth-child(2) , .merch .merch_inf:nth-child(3){
+    display: none;
+}
+
+
+.dates {                    /*visa live dates section*/
+    position: right;
+    margin: 2% 2vw;
+}
+
+.dates table {
+    width: 100%;
+}
+
+.dates td {
+    font-size: 2vh;
+    text-align: left;
+    color: #383d47;
+    font-family: 'Anton';
+}
+
+.dates td:nth-child(1) {
+    white-space: nowrap;
+    width: 20%;
+}
+
+.dates td:nth-child(2) {
+    width: 30%;
+    display: none;
+}
+
+.dates td:nth-child(3) {
+    width: 30%;
+}
+.dates td:nth-child(4) {
+    white-space: nowrap;
+    width: 10%;
+}
+
+.button_dates1 {                    /*button kai tickets unavalaible*/
+    background-color: #919296;
+    color: #4b515e;
+    width: 98%;
+    border: 0.3vh solid #24272d;
+    font-size: 120%;
+    cursor: pointer;
+    margin-bottom: 1%;
+    font-family: 'Futura Display', cursive;
+}
+
+.only_dates {
+    margin-top: 6vh;
+}
+
+.button_dates2 {                    /*button kai tickets avalaible*/
+    background-color: #919296;
+    color:  #f3dc7b;;
+    width: 98%;
+    border: 0.3vh solid #24272d;
+    font-size: 120%;
+    cursor: pointer;
+    margin-bottom: 1%;
+    font-family: 'Futura Display', cursive;
+}
+
+.button_dates2:hover, .button_dates1:hover {
+    background-color:#24272d;
+}
+
+.button_dates3 {                /*button for past dates*/
+    background-color: #24272d;
+    color: #4b515e;
+    width: 98%;
+    border: 0.3vh solid #24272d;
+    font-size: 120%;
+    cursor: pointer;
+    margin-bottom: 1%;
+    font-family: 'Futura Display', cursive;
+}
+
+.video {                            /*visas video section */
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+}
+
+.video_inf {
+    text-align: center;
+    width: 90vw;
+}
+
+.video iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border: 0;
+}
+
+.video p {
+    font-size: 1.7vh;
+    font-family: 'Anton';
+}
+
+.video .video_inf:nth-child(2), .video_inf:nth-child(3) {
+    display:none;
+}
+
+.b2                             /*view more*/
+{
+    background-color: #919296;
+    color: #4b515e;
+    text-align: center;
+    border: 0.3vh solid  #4b515e;
+    font-size: 2.7vh;
+    cursor: pointer;
+    margin-bottom: 5%;
+    font-family: 'Futura Display', cursive;
+}
+
+.merch button:hover, .b2:hover {
+    text-decoration: underline;
+}
+
+footer {                        /* abieju footer */
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin-bottom: 1%;
+    margin-top: 4%;
+}
+
+footer button {                     
+    background-color:#919296;
+    color:  #24272d;
+    border: none;
+    font-weight: bold;
+    font-size: 1vh;
+    margin-left: 1%;
+    margin-right: 1%;
+    cursor: pointer;
+    margin-bottom: 0.5%;
+    font-style: italic;
+    font-family: 'Teko';
+}
+
+footer button:hover {
+    text-decoration: underline;
+}
+
+.text2{                         /*visu datu html*/
+    padding-top:12%;
+    padding-bottom: 2%;
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+    .pav {font-size: 8vh;}
+    .b1 {font-size: 3vh;}
+    .img1 {padding-top: 16vh;}
+    .img2 {width:28vw;}
+    .text1 {font-size: 6vw;}
+    .merch img {width: 100%;}
+    .merch .merch_inf:nth-child(2) {display:inline-block;}
+    .merch button {font-size: 3vh;}
+    .b2 {font-size: 4vh;}
+    .dates td:nth-child(2) {display: table-cell;}
+    .dates td:nth-child(4) {width:30%;}
+    .dates td {font-size:2.3vh;}
+    .dates {margin: 2% 4vw;}
+    .video .video_inf:nth-child(2){
+        display:block;
+        margin-left: 2vw;
+    }
+    footer button {font-size: 1.6vh;}
+    
+}
+
+@media screen and (min-width: 801px) {
+    .pav {font-size: 10vh;}
+    .b1 {font-size: 5vh;}
+    .img1 {padding-top: 19vh;}
+    .img2 {width:23vw;}
+    .text1 {font-size: 4vw;}
+    .merch img {width: 100%;}
+    .merch .merch_inf:nth-child(2), .merch .merch_inf:nth-child(3) {display:inline-block;}
+    .merch button {font-size: 3.5vh;}
+    .b2 {font-size: 4.5vh;}
+    .dates td:nth-child(2) {display: table-cell;}
+    .dates td:nth-child(4) {width:30%;}
+    .dates td {font-size:2.8vh;}
+    .dates {margin:2% 7vw;}
+    .video .video_inf:nth-child(2), .video_inf:nth-child(3){
+        display:block;
+        margin-left: 2vw;
+    }
+    footer button {font-size: 1.8vh;}
+}
+
+@media screen and (min-width: 1000px){
+    .dates {margin: 2% 15vw;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
