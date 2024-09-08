@@ -1,0 +1,186 @@
+@font-face{
+  font-family: 'Oswald';
+  src: url(Oswald-VariableFont_wght.ttf) format('truetype');
+}
+
+body {
+  background-color: #c5c5e6;
+  padding-top:25vw;
+}
+
+.pav {
+  text-align: center;
+  font-weight: bold;
+  width: 94%;
+  font-size: 5vw;
+  font-family: 'Oswald', sans-serif;
+  margin: 0 auto;
+  border-color:   #2f2f62;
+}
+
+.sekcija {
+  text-align: center;
+  width: 90%;
+  font-family: 'Oswald', sans-serif;
+  margin: 0 auto;
+  font-size: 3.7vw;
+  border-color:  #2f2f62;
+}
+
+.b1 {
+  display: inline-block;
+  background-color: #a3a3cc;
+  font-family: 'Oswald', sans-serif;
+  font-size: 3vw;
+  border: 0.2vw solid #2f2f62;
+  width: auto;
+  height: auto;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 0.15vw;
+  width: 95%;
+}
+
+.form-group span {
+  white-space: nowrap;
+  text-align: center; 
+}
+
+label {
+  text-align: right;
+  padding-right: 0.7vw;
+  width: 30%;
+}
+  
+input[type="text"],
+  select {
+  flex: 2;
+}  
+
+#gender, #name, #name2, #l_name, #code, #nr, #email, #address,
+#bday_y, #bday_m, #bday_d, #education, #ed2, #ed_y, #kval,
+#ed_laipsnis, #wed, #so_v, #so_p, #prof, #pp, #stud_p, #kursas, #s_istaiga,
+#bm, #d_istaiga, #pareigos, #nedarbas, #vac_y, #vac_m, #vac_d,
+#d_patirtis, #d_sritis {
+  text-align: left;
+  width: 7vw;
+  border: 0.1vw solid #3b3b70;
+  border-radius: 0.1vw;
+  background-color:  #43437d;
+  font-size: 4vw;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  margin-right: 0.1vw;
+}
+
+#vedyb, #issilavinimas, #aukst, #apie_studijas, #apie_darba, 
+#apie_nedarba, #apie_at, #prof_pad, #sso {
+  display:none;
+}
+
+.error {
+  text-align: left;
+  border: none;
+  width: 5vw;
+  font-size: 3vw;
+  color: rgb(207, 12, 12);
+  font-family: 'Oswald', sans-serif;
+  background-color:  #c5c5e6;
+  display:none;
+}
+
+.progresas {
+  margin-top: 0.8vw;
+  display: flex;
+  justify-content:center;
+}
+
+.b2 {
+  width: 5vw;
+  height: 5vw;
+  margin-right: 1vw;
+  background-color: #d3d3de;
+  border: 0.1vw solid #2f2f62;
+}
+
+@media screen and (min-width: 350px) and (max-width: 450px)
+{
+  body {padding-top:15vw;}
+  #gender, #name, #name2, #l_name, #code, #nr, #email, #address,
+  #bday_y, #bday_m, #bday_d, #education, #ed2, #ed_y, #kval,
+  #ed_laipsnis, #wed, #so_v, #so_p, #prof, #pp, #stud_p, #kursas, #s_istaiga,
+  #bm, #d_istaiga, #pareigos, #nedarbas, #vac_y, #vac_m, #vac_d,
+  #d_patirtis, #d_sritis {border:0.3vw solid #3b3b70;}
+}
+
+@media screen and (min-width: 451px) and (max-width: 600px)
+{
+  body {padding-top: 8vw;}
+  .pav {font-size:5vw; width:94%;}
+  .sekcija {width:90%; font-size:3vw;}
+  .form-group {width:95%;}
+  #gender, #name, #name2, #l_name, #code, #nr, #email, #address,
+  #bday_y, #bday_m, #bday_d, #education, #ed2, #ed_y, #kval,
+  #ed_laipsnis, #wed, #so_v, #so_p, #prof, #pp, #stud_p, #kursas, #s_istaiga,
+  #bm, #d_istaiga, #pareigos, #nedarbas, #vac_y, #vac_m, #vac_d,
+  #d_patirtis, #d_sritis {font-size:3vw; border:0.3vw solid #3b3b70; margin-right: 0.3vw;}
+  .error {font-size: 2vw;}
+  .b2 {width:3vw; height: 3vw;}
+}
+
+
+@media screen and (min-width: 601px) and (max-width: 700px)
+{
+  body {padding-top: 5vw;}
+  .pav {font-size:5vw; width:94%;}
+  .sekcija {width:90%; font-size:3vw;}
+  .form-group {width:95%;}
+  #gender, #name, #name2, #l_name, #code, #nr, #email, #address,
+  #bday_y, #bday_m, #bday_d, #education, #ed2, #ed_y, #kval,
+  #ed_laipsnis, #wed, #so_v, #so_p, #prof, #pp, #stud_p, #kursas, #s_istaiga,
+  #bm, #d_istaiga, #pareigos, #nedarbas, #vac_y, #vac_m, #vac_d,
+  #d_patirtis, #d_sritis {font-size:3vw; border:0.3vw solid #3b3b70; margin-right: 0.3vw;}
+  .error {font-size: 2vw;}
+  .b2 {width:3vw; height: 3vw;}
+}
+
+@media screen and (min-width: 701px) and (max-width: 800px)
+{
+  body {padding-top: 3vw;}
+  .pav {font-size:4vw; width:80%;}
+  .sekcija {width:90%; font-size:2.1vw;}
+  .form-group {width:95%;}
+  #gender, #name, #name2, #l_name, #code, #nr, #email, #address,
+  #bday_y, #bday_m, #bday_d, #education, #ed2, #ed_y, #kval,
+  #ed_laipsnis, #wed, #so_v, #so_p, #prof, #pp, #stud_p, #kursas, #s_istaiga,
+  #bm, #d_istaiga, #pareigos, #nedarbas, #vac_y, #vac_m, #vac_d,
+  #d_patirtis, #d_sritis {font-size:2.1vw; border:0.3vw solid #3b3b70; margin-right: 0.3vw;}
+  .error {font-size: 1.5vw;}
+  .b2 {width:2.4vw; height: 2.4vw;}
+  .b1 {font-size: 1.7vw;}
+}
+
+@media screen and (min-width: 801px)
+{
+  body {padding-top: 1vw;}
+  .pav {font-size:2vw; width:75%;}
+  .sekcija {width:90%; font-size:1.5vw;}
+  .form-group {width:95%;}
+  #gender, #name, #name2, #l_name, #code, #nr, #email, #address,
+  #bday_y, #bday_m, #bday_d, #education, #ed2, #ed_y, #kval,
+  #ed_laipsnis, #wed, #so_v, #so_p, #prof, #pp, #stud_p, #kursas, #s_istaiga,
+  #bm, #d_istaiga, #pareigos, #nedarbas, #vac_y, #vac_m, #vac_d,
+  #d_patirtis, #d_sritis {font-size:1.5vw; border:0.2vw solid #3b3b70; margin-right: 0.3vw;}
+  .error {font-size: 0.9vw;}
+  .b2 {width:1.7vw; height: 1.7vw;}
+  .b1 {font-size: 1.3vw;}
+}
