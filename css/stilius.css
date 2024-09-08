@@ -1,0 +1,269 @@
+
+@font-face{
+    font-family: 'Russo';
+    src: url(RussoOne-Regular.ttf) format('truetype');
+}
+
+body {
+    background-color: #a3c79b;
+}
+
+.parent-container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.sekcija {
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border: none;
+    width: 100%;
+}
+
+.form-group {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 0.1vw;   
+    width: 95%;
+    font-family: 'Russo';
+    font-size: 7vw;              
+}
+
+.form-group span {
+    word-wrap: break-word; 
+    text-align: center; 
+    margin: auto 0.5vw;
+}
+
+#name {
+    text-align: center;          
+    width: 70%;                
+    border: 0.2vw solid #394d35;
+    border-radius: 0.1vw;
+    background-color:  #394d35;
+    font-size: 6.5vw;        
+    color: white;
+    font-family: 'Russo', sans-serif;
+    margin-left: 0.3vw;     
+}
+
+.b1 {
+    display: inline-block;
+    background-color:#530B0B;
+    font-family: 'Russo', sans-serif;
+    font-size: 4.5vw;
+    border: 0.1vw solid #530B0B;
+    width: auto;
+    height: auto;
+    font-weight: bold;
+    color: white;
+    margin-top: 1vw;    
+}
+
+.taisykles {
+    display: block;
+    text-align: center;
+    width: 80%;            
+    font-family: 'Russo';
+    font-size: 4vw;           
+    position: fixed;
+    left: 50%; 
+    transform: translateX(-50%);
+    margin-top:0;
+}
+
+#rules:hover {
+    text-decoration: underline;
+}
+
+ul {
+    padding-left: 0; 
+    list-style-position: inside; 
+}
+
+.header {
+    text-align: center;
+    justify-content: center;
+    height: 8vw;             
+    display:flex;
+    margin: 0;
+    padding: 0;
+    margin-top: 0.3vw;        
+}
+
+.header h1 {
+    font-family: 'Russo';
+    margin: 0 0.5vw;
+    padding: 0;
+    font-size: 7vw;   
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 3vw;   
+    row-gap: 3vw;     
+    width: 100%;      
+    justify-content: center;
+    margin: 0 auto;
+    margin-top:7%; 
+}
+
+.grid-item {
+    width: 21vw;   
+    height: 21vw;  
+    background-color:#4c6646;
+    font-size: 30px;
+    text-align: center;
+    border: none;
+    overflow: hidden;
+    position: relative;
+}
+
+.grid-item img {
+    width: 20vw;    
+    height: 20vw;   
+    display:none;
+}
+
+.grid-item:hover {
+    background-color: #354731;
+}
+
+.table-container {
+    width: 80%;               
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center; 
+    display: flex;   
+    justify-content: center;
+    margin-top:1vw;
+    margin-bottom: 1vw;
+}
+
+.result-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.result-table th,
+.result-table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+.result-table th {
+    font-weight: bold;
+    font-family: 'Russo';
+    font-size: 4.5vw;                 
+}
+
+thead 
+{
+    background-color: #354731;
+    color: white;
+}
+
+#results
+{
+    background-color: #8d9f88;
+    color: black;
+    font-family: 'Russo';
+    font-size: 4vw;           
+}
+
+.marg {margin-top:20%}
+
+#pabaiga {padding-top: 10%;}
+
+/*pirmas puslapis*/
+@media screen and (min-width: 400px) and (max-width: 550px)
+{
+    .form-group {font-size: 5vw;}
+    #name {font-size: 4.5vw;}
+    .b1 {font-size: 4vw;}
+    .taisykles {font-size: 3.5vw;}
+}
+
+@media screen and (min-width: 551px) and (max-width: 800px)
+{
+    .form-group {display:flex; font-size: 4vw;}
+    #name {text-align:left; font-size: 3.5vw; width:40%; margin-left:0.5vw;}
+    .b1 {font-size: 3vw;}
+    .taisykles {font-size: 2.5vw;}
+
+}
+
+@media screen and (min-width: 801px) and (max-width: 1000px)
+{
+    .form-group {display:flex; font-size: 3vw;}
+    #name {text-align:left; font-size: 2.5vw; width:40%; margin-left:0.5vw;}
+    .b1 {font-size: 2vw;}
+    .taisykles {font-size: 1.5vw;}
+}
+
+@media screen and (min-width: 1001px)
+{
+    .form-group {display:flex; font-size: 2vw;}
+    #name {text-align:left; font-size: 1.8vw; width:25%; margin-left:0.5vw;}
+    .b1 {font-size: 1.5vw;}
+    .taisykles {font-size: 1.3vw; width: 45%;}
+}
+
+/*antras puslapis*/
+@media screen and (min-width: 400px) and (max-width: 600px)
+{
+    .marg {margin-top:15%;}
+}
+
+@media screen and (min-width: 601px) and (max-width: 1000px)
+{
+    .marg {margin-top:7%;}
+    .header {height: 7vw; margin-top: 0.3vw;}
+    .header h1 {font-size:6vw;}
+    .grid-container { margin-top:3%; width: 100%; grid-template-columns: auto auto auto auto; column-gap:2.5vw; row-gap:2.5vw;}
+    .grid-item {width:18vw; height: 18vw;}
+    .grid-item img {width:18vw; height: 18vw;}
+}
+
+@media screen and (min-width: 1001px)
+{
+    .marg {margin-top:1%;}
+    .header {height: 2.5vw; margin-top: 0.3vw;}
+    .header h1 {font-size:2vw;}
+    .grid-container { margin-top:1%; width: 100%; grid-template-columns: auto auto auto auto auto; column-gap:1.5vw; row-gap:1.5vw;}
+    .grid-item {width:10vw; height: 10vw;}
+    .grid-item img {width:10vw; height: 10vw;}
+}
+
+/*trecias puslapis*/
+
+@media screen and (min-width: 551px) and (max-width: 800px)
+{
+    .table-container {width: 70%;}
+    .result-table th {font-size: 4vw;}
+    #results {font-size: 3vw;}
+}
+
+@media screen and (min-width:801px) and (max-width: 1000px)
+{
+    .table-container {width: 60%;}
+    .result-table th {font-size: 3vw;}
+    #results {font-size: 2.5vw;}
+}
+
+@media screen and (min-width: 1001px)
+{
+    .table-container {width: 50%;}
+    .result-table th {font-size: 2vw;}
+    #results {font-size: 2vw;}
+}
+

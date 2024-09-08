@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stilius.css">
+    <script src="script.js" defer></script>
+    <title>Memory Game</title>
+</head>
+<body>
+    <div class="parent-container" id="intro" style="display:flex">
+        <fieldset class="sekcija">
+            <div class="form-group">
+                <label for="name" style="max-width:50%">Įveskite vardą:</label>
+                <input type="text" id="name" placeholder="GuestPlayer"><br>
+            </div>
+            <div class="form-group">
+                <button class="b1" id="zaisti">ŽAISTI</button>
+            </div>
+            <div class="taisykles">
+                <ul><b id="rules">ŽAIDIMO TAISYKLĖS</b>
+                    <div id="taisykles" style="display:none">
+                    <li>Žaidimo esmė: atversti vienodas paveiksliukų poras.</li>
+                    <li>Neįvedus jokio vardo, vardas automatiškai bus nustatomas kaip "GuestPlayer".</li>
+                    <li>Vienu metu galima atversti dvi korteles.</li>
+                    <li>Už neteisingą atverstą porą minusuojama 20 taškų, už teisingą - pridedama 50.</li>
+                    <li>Kuomet padaroma daugiau nei 40 ėjimų, už neteisingą porą minusuojama 20 taškų, o už teisingą pridedama 30.</li>
+                    <li>Jeigu keli žaidėjai turi tiek pat taškų, pirmenybė bus teikiama žaidėjui padariusam mažiau ėjimų.</li>
+                    </div>
+                </ul>
+            </div>
+        </fieldset>
+    </div>
+    <div class="parent-container" id="game">
+        <div class="marg">
+            <div class="header">
+                <h1>Taškai: </h1>
+                <h1 id="taskai">50</h1>
+            </div>
+            <div class="header">
+                <h1>Ėjimai: </h1>
+                <h1 id="ejimai">0</h1>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="grid-item"id="gi1"><img id="img1"></div>
+            <div class="grid-item"id="gi2"><img id="img2"></div>
+            <div class="grid-item"id="gi3"><img id="img3"></div>
+            <div class="grid-item"id="gi4"><img id="img4"></div>
+            <div class="grid-item"id="gi5"><img id="img5"></div>
+            <div class="grid-item"id="gi6"><img id="img6"></div>
+            <div class="grid-item"id="gi7"><img id="img7"></div>
+            <div class="grid-item"id="gi8"><img id="img8"></div>
+            <div class="grid-item"id="gi9"><img id="img9"></div>
+            <div class="grid-item"id="gi10"><img id="img10"></div>
+            <div class="grid-item"id="gi11"><img id="img11"></div>
+            <div class="grid-item"id="gi12"><img id="img12"></div>
+            <div class="grid-item"id="gi13"><img id="img13"></div>
+            <div class="grid-item"id="gi14"><img id="img14"></div>
+            <div class="grid-item"id="gi15"><img id="img15"></div> 
+            <div class="grid-item"id="gi16"><img id="img16"></div>
+            <div class="grid-item"id="gi17"><img id="img17"></div>
+            <div class="grid-item"id="gi18"><img id="img18"></div>
+            <div class="grid-item"id="gi19"><img id="img19"></div>
+            <div class="grid-item"id="gi20"><img id="img20"></div>
+        </div>
+    </div>
+    <div class="parent-container" id="pabaiga">
+            <div class="form-group">
+                <span>Žaidimas baigtas. Jūsų taškai: </span>
+                <span id="points"></span>
+            </div>
+            <div class="table-container">
+                <table class="result-table">
+                    <thead>
+                        <tr>
+                            <th>Vieta</th>
+                            <th>Žaidėjas</th>
+                            <th>Taškai</th>
+                            <th>Ėjimai</th>
+                        </tr>
+                    </thead>
+                    <tbody id="results"></tbody>
+                </table>
+            </div>
+            <div class="form-group">
+                <button class="b1" id="restart">ŽAISTI DAR KARTĄ</button>
+            </div>
+            <div class="form-group">
+                <button class="b1" id="new">NAUJAS ŽAIDĖJAS</button>
+            </div>
+    </div>
+
+
+
+
+
+
+</body>
+</html>
