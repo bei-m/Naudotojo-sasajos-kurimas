@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stilius.css">
+    <title>Skaiciuotuvas</title>
+</head>
+<script src="script.js" defer></script>
+<body>
+    <div class="konteineris">
+        <table>
+            <tr>
+                <th class="th2" colspan="6">SVARBU: skaičiuotuvas priima skaičius mažesnius nei |100 000 000|</th>
+            </tr>
+            <tr>
+                <th class="th1" colspan="6"><div id="screen"></div></th>
+            </tr>
+            <tr>
+                <th class="th1" colspan="6"><div id="resultscreen"></div></th>
+            </tr>
+            <tr>
+                <td colspan="3"><button onclick="ac()" class="b4">AC</button></td>
+                <td><button onclick="del()" class="b4">del</button></td>
+                <td><button onclick="rodymas('(')" class="b2">(</button></td>
+                <td><button onclick="skliaustas()" class="b2">)</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="rodymas('7')" class="b1">7</button></td>
+                <td><button onclick="rodymas('8')" class="b1">8</button></td>
+                <td><button onclick="rodymas('9')" class="b1">9</button></td>
+                <td><button onclick="rodymas('×')" class="b2">×</button></td>
+                <td><button onclick="rodymas('/')" class="b2">/</button></td>
+                <td><button onclick="rodymas('^2')" class="b2">x<sup>2</sup></button></td>
+            </tr>
+            <tr>
+                <td><button onclick="rodymas('4')" class="b1">4</button></td>
+                <td><button onclick="rodymas('5')" class="b1">5</button></td>
+                <td><button onclick="rodymas('6')" class="b1">6</button></td>
+                <td><button onclick="rodymas('–')" class="b2">–</button></td>
+                <td><button onclick="rodymas ('&radic;(')" class="b2">√x</button></td>
+                <td><button onclick="rodymas('^')"class="b2">x<sup>n</sup></button></td>
+            </tr>
+            <tr>
+                <td><button onclick="rodymas('1')" class="b1">1</button></td>
+                <td><button onclick="rodymas('2')" class="b1">2</button></td>
+                <td><button onclick="rodymas('3')" class="b1">3</button></td>
+                <td><button onclick="rodymas('+')" class="b2">+</button></td>
+                <td><button onclick="rodymas('&#8731;(')"class="b2">∛x</button></td>
+                <td><button onclick="rodymas('!')" class="b2">x!</button></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button onclick="rodymas('0')" class="b1">0</button></td>
+                <td><button onclick="rodymas('.')" class="b1">.</button></td>
+                <td colspan="3"><button onclick="skaiciavimas()"class="b3">=</button></td>
+            </tr>
+            <tr>
+                <th class="th2" colspan="6"><button class="td2">Žiūrėti informaciją apie 'error' ir 'undefined' atsakymus</button></th>
+            </tr>
+        </table>
+        <div class="sarasai" id="informacija">
+        <ul><b>Ką gali reikšti atsakymas 'error'?</b>
+            <li>Trūksta vieno skliausto [pvz.: 8+<span style="color:red">(</span>12-4= ]</li>
+            <li>Du operatoriai, kurie negali eiti vienas po kito, eina vienas po kito [pvz.: 8<span style="color:red">×+</span>3= ; 8<span style="color:red">+=</span> ]</li>
+            <li>Operatorius, kuris būtinai turi eiti po kito operatoriaus, neina vienas po kito [pvz.:9<span style="color:red">(</span>20/6)= ]</li>
+            <li>Skaičius, iš kurio norima traukti šaknį, yra ne tarp skliaustų [pvz.: √<span style="color:red">(</span>20= ]</li>
+        </ul>
+        <ul><b>Ką gali reikšti atsakymas 'undefined'?</b>
+            <li>Yra dalinama iš nulio [pvz.: 8<span style="color:red">/0</span>= ]</li>
+            <li>Bandoma skaičiuoti ne sveikojo skaičiaus faktorialą [pvz.: <span style="color:red">8.2</span>!= ]</li>
+            <li>Bandoma skaičiuoti neigiamo skaičiaus faktorialą [pvz.: <span style="color:red">-3</span>!= ]</li>
+            <li>Kvadratinė šaknis yra traukiama iš neigiamo skaičiaus [pvz.: √(<span style="color:red">-20</span>)= ]</li>
+        </ul>
+    </div>
+    </div>
+</body>
+</html>
